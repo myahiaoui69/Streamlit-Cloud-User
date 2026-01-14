@@ -1,0 +1,11 @@
+streamlit
+streamlit-cookies-manager
+user-agents
+pycountry
+geoip2
+maxminddb-geolite2
+requests
+pandas
+numpy
+user-agents
+pycountry
