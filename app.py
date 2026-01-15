@@ -29,8 +29,9 @@ user_email = payload["email"] # Email Google
 # -------- Charger le quota depuis JSON --------
 try:
     with open(QUOTA_FILE, "r") as f:
-        quota_data = json.load(f)
-except FileNotFoundError:
+        content = f.read().strip()
+        quota_data = json.loads(content) if content else {}
+except (FileNotFoundError, json.JSONDecodeError):
     quota_data = {}
 
 # -------- Initialiser l'utilisateur si nouveau --------
