@@ -9,3 +9,5 @@ pandas
 numpy
 user-agents
 pycountry
+authlib
+PyJWT
